@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:16
+    container_name: chikenhot_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: chikenhot_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - chikenhot_pgdata:/var/lib/postgresql/data
+ 
+volumes:
+  chikenhot_pgdata:
