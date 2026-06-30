@@ -22,3 +22,4 @@ jobs:
             -Dsonar.organization=grupo-delivery
             -Dsonar.projectKey=jakemateharol_controlproyect
             -Dsonar.sources=.
+            -Dsonar.branch.name=main
